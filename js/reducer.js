@@ -1,3 +1,5 @@
+let state = {count: 0}
+
 function changeState(state, action){
   switch (action.type) {
     case 'INCREASE_COUNT':
@@ -12,7 +14,6 @@ function dispatch(action){
   return state
 }
 
-let state = {count: 0}
-let action = {type: 'INCREASE_COUNT'}
-
-changeState(state, action)
+console.log(dispatch({type: 'INCREASE_COUNT'}))
+console.log(dispatch({type: 'INCREASE_COUNT'}))
+console.log(dispatch({type: 'INCREASE_COUNT'}))
